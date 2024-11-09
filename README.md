@@ -1,28 +1,49 @@
 ## PixelMon Learning Phase Dev Assignment 1
 
-You’ll be creating a game using PhaserJS & Typescript. You can find the tasks that have to implemented below.
+Welcome to the Coin Collector Game! This is a simple arcade-style game built with Phaser 3 where players control a character to collect coins on a randomly generated map. Any contact with the girl sprite causes you to die and hence game over :((
 
-**NOTE**
+Try to get as much score as possible whilst avoiding girls!!
 
-For the assets of the game (images, sprites etc.) you are free to use whatever you like and find on the internet.
+## Game Features
+Player Controls: Move the player using arrow keys.
 
-**Main Tasks**
+Coins: Collect coins to increase your score.
 
-- [ ]  Add a character that can be moved around using arrow keys. Use sprite animations for movement. <br>
-Resource: https://www.youtube.com/watch?v=ElAmJj8Tfo8 
-- [ ]  Add a tilemap for the character to move around in. Add borders/boundaries to make sure the character does not cross the map. <br>
-Use a level editor like [Tiled](https://www.mapeditor.org/) for this.
+Obstacles: Avoid girl sprite, or it's game over!
 
-**Bonus Tasks**
+Score Tracking: Keep track of your current score. Each collected coin is worth 10 points.
 
-- [ ]  Add coins throughout the map for the character to collect. <br>
-The location of the coins can be random or predetermined. The coins can be static or animated. <br>
-Once the character reaches a particular coin, the coin is considered to be “collected” and should disappear from the screen.
-- [ ]  Implement a score system based on the collection of coins. <br>
-Each coin collected should increment the current score of the character. You are free to increment the score however you like. 
-The current score should be displayed on the screen. 
-- [ ]  Keep track of the highest score. <br>
-The score resets each session i.e, each time the app is restarted. As the current score changes, keep track of the highest score so far. <br>
-Use localStorage to persist the highest score between sessions. <br>
-Along with the current score, the highest score should also be displayed on the screen. <br>
-Resource: [https://davitdvalashvili1996.medium.com/local-storage-in-javascript-f7aad374980e#:~:text=Local storage is a type,them into strings using JSON](https://davitdvalashvili1996.medium.com/local-storage-in-javascript-f7aad374980e#:~:text=Local%20storage%20is%20a%20type,them%20into%20strings%20using%20JSON).
+High Score: The game saves the highest score between sessions using localStorage.
+
+Dynamic Coin Generation: Only 10 coins are visible at a time, with each collected coin immediately replaced by another.
+
+## How to Play
+Controls: Use the arrow keys to move the character up, down, left, or right.
+
+Objective: Collect as many coins as possible without hitting a bump.
+
+Each coin collected adds 10 points to your score.
+
+Your highest score is displayed and stored in localStorage to persist across game sessions.
+
+Game Over: If the player collides with a bump, the game ends, and the page reloads, resetting the score but keeping the highest score.
+
+## Customization
+
+Number of Coins: Adjust the number of visible coins by changing the number in the generateCoins(10) function call in game.js.
+
+Obstacles: Adjust the number or placement of bumps by modifying the loop within the create() function where bumps are generated.
+
+Sprites: use your own images to act as bumps, coins or main character
+
+## Further Upgrades
+
+Initial Page: I'm planning to add an initial page which contains previous top 5 high scores, character select and other features and also a play button which starts the game
+
+Character Selection: I'm planning to add this in inital screen where you can select between Ash, Serena or Biker!!
+
+Enemies: Mario styed enemies which move in a certain line or pattern and if you have contact with them, its game over
+
+Shooters: Another variation of enemies which may be a machine or an actual npc which shoots you and if you get shot twice, its game over. Might look like contra shooters
+
+ps:- I'm sorry but it took me a lot of time finding sprites and maps and all so I haven't implemented anything fancy or solid, I'll improve up on this but I learnt a lot doing this assignment and I'll keep working better as I really wish to make a functional pokemon game.
