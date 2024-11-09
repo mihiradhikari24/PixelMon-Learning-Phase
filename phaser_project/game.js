@@ -29,8 +29,8 @@ let highScoreText;
 function preload() {
   this.load.spritesheet('player', 'assets/trchar000_1.png', { frameWidth: 32, frameHeight: 48 });
   this.load.image('coin', 'assets/coin.png');
-  this.load.image('background', 'assets/bg.png');
-  this.load.image('bump', 'assets/introGirl.png');
+  this.load.image('background', 'assets/map.png');
+  this.load.image('bump', 'assets/RISINGBADGE.png');
 }
 
 function create() {
