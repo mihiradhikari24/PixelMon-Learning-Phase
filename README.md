@@ -1,15 +1,15 @@
 ## PixelMon Learning Phase Dev Assignment 1
 
-Welcome to the Coin Collector Game! This is a simple arcade-style game built with Phaser 3 where players control a character to collect coins on a randomly generated map. Any contact with the girl sprite causes you to die and hence game over :((
+Welcome to the Coin Collector Game! This is a simple arcade-style game built with Phaser 3 where players control a character to collect coins on a randomly generated map. Any contact with the dark sprite causes you to die and hence game over :((
 
-Try to get as much score as possible whilst avoiding girls!!
+Try to get as much score as possible whilst avoiding the dark sprite..
 
 ## Game Features
 Player Controls: Move the player using arrow keys.
 
 Coins: Collect coins to increase your score.
 
-Obstacles: Avoid girl sprite, or it's game over!
+Obstacles: Avoid the black, or it's game over!
 
 Score Tracking: Keep track of your current score. Each collected coin is worth 10 points.
 
@@ -18,6 +18,7 @@ High Score: The game saves the highest score between sessions using localStorage
 Dynamic Coin Generation: Only 10 coins are visible at a time, with each collected coin immediately replaced by another.
 
 ## How to Play
+
 Controls: Use the arrow keys to move the character up, down, left, or right.
 
 Objective: Collect as many coins as possible without hitting a bump.
